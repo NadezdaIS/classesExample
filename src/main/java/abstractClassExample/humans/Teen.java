@@ -21,10 +21,13 @@ public class Teen extends Human{
         if (location.equals("school")) return "I do not got to school!";
         return "Going to " + location;
     }
+    @Override
     public void grow (int food, int water) throws Exception{
         if (food < 3 || water < 2 ){
             throw new Exception("I need more!");
         }
+        
+//This way we are also preserving the original behaviour of this method         
         super.grow(food, water);
     }
 }
