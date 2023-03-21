@@ -11,7 +11,7 @@ public class ProductController {
     public String addProduct(){
         String name = JOptionPane.showInputDialog("Enter name of product");
         Double price = Double.parseDouble(JOptionPane.showInputDialog("Enter price of product"));
-        Long quantity = Long.parseLong(JOptionPane.showInputDialog("Enter Quantity"));
+        Long quantity = Long.parseLong(JOptionPane.showInputDialog("Enter quantity"));
 
         String[] availableMeasurements = {"KG", "Item", "MB", "Liters"};
 
